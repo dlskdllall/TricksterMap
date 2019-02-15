@@ -1,6 +1,6 @@
 ﻿namespace TricksterMap
 {
-    partial class ConfigLayerCollisionForm
+    partial class MapControlForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.collisionPicture = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.collisionPicture)).BeginInit();
+            this.btnSaveAs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // collisionPicture
+            // btnSaveAs
             // 
-            this.collisionPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.collisionPicture.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.collisionPicture.Location = new System.Drawing.Point(0, 0);
-            this.collisionPicture.Name = "collisionPicture";
-            this.collisionPicture.Size = new System.Drawing.Size(800, 450);
-            this.collisionPicture.TabIndex = 0;
-            this.collisionPicture.TabStop = false;
+            this.btnSaveAs.Location = new System.Drawing.Point(12, 23);
+            this.btnSaveAs.Name = "btnSaveAs";
+            this.btnSaveAs.Size = new System.Drawing.Size(429, 27);
+            this.btnSaveAs.TabIndex = 0;
+            this.btnSaveAs.Text = "Save As";
+            this.btnSaveAs.UseVisualStyleBackColor = true;
+            this.btnSaveAs.Click += new System.EventHandler(this.btnSaveAs_Click);
             // 
-            // ConfigLayerCollisionForm
+            // MapControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.collisionPicture);
-            this.Name = "ConfigLayerCollisionForm";
-            this.Text = "Config Layer - Collision Data";
-            ((System.ComponentModel.ISupportInitialize)(this.collisionPicture)).EndInit();
+            this.ClientSize = new System.Drawing.Size(453, 75);
+            this.Controls.Add(this.btnSaveAs);
+            this.Name = "MapControlForm";
+            this.Text = "Map Control";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        public System.Windows.Forms.PictureBox collisionPicture;
+        private System.Windows.Forms.Button btnSaveAs;
     }
 }
